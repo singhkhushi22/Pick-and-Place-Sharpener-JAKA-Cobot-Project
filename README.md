@@ -85,7 +85,8 @@ The motion is achieved using **linear movement commands** (`MoveL`) to ensure sm
 
 ## **Video Demonstration**
 
-*(Insert video link here after upload)*
+*([![Watch the Demo](thumbnail.png)](https://drive.google.com/file/d/1_QK3mkfCwfpWjCR7SRSeIoO2WEfEr6dQ/preview)
+)*
 
 
 
