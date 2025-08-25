@@ -4,8 +4,7 @@
 
 This project demonstrates an **industrial pick-and-place application** using a **JAKA collaborative robot** equipped with a **pneumatic gripper**. The cobot is programmed to pick up a **sharpener** from a fixed position and place it at a designated location.
 
-The motion is achieved using **linear movement commands** (`MoveL`) to ensure smooth and precise path control between waypoints.
-*(⚠️ In this repo, the current implementation uses only **`MoveJ`**, as shown in the program below.)*
+The motion in this repo is achieved using **joint movement commands (`MoveJ`)**, which are fast and simple but do not guarantee straight-line paths.
 
 ---
 
@@ -24,7 +23,7 @@ The motion is achieved using **linear movement commands** (`MoveL`) to ensure sm
 * **JAKA Programming Environment** (JAKA App / JAKA SDK)
 * Programming Commands:
 
-  * **MoveJ** (Joint Movement – used for approach, retract, and pick/place in this repo)
+  * **MoveJ** (Joint Movement – used for all motions in this repo)
   * **Set DO** (Digital Output – used for gripper open/close)
 
 ---
@@ -49,7 +48,7 @@ The motion is achieved using **linear movement commands** (`MoveL`) to ensure sm
 
 ---
 
-## **Actual Program Flow (From `pickplacesharpner.jpg`)**
+## **Actual Program Flow**
 
 ```text
 MoveJ → Home
@@ -64,8 +63,9 @@ MoveJ → Retract from place
 MoveJ → Home
 ```
 
-📸 Screenshot of actual program:
-`pickplacesharpner.jpg`
+📸 **Program Screenshot:**
+
+![Pick and Place Sharpener Program](pickplacesharpner.jpg)
 
 ---
 
@@ -106,6 +106,10 @@ MoveJ → Home
 ## **Video Demonstration**
 
 *([![Watch the Demo](thumbnail.png)](https://drive.google.com/file/d/1_QK3mkfCwfpWjCR7SRSeIoO2WEfEr6dQ/preview))*
+
+
+
+
 
 
 
